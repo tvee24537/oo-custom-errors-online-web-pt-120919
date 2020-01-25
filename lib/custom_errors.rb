@@ -4,7 +4,7 @@ class Person
   
   class PartnerError < StandardError
     
-end
+  end
 
   def initialize(name)
     @name = name
