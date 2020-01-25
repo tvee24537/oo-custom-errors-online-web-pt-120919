@@ -1,10 +1,5 @@
 class Person
   attr_accessor :partner, :name
-  
-  
-  class PartnerError < StandardError
-    
-  end
 
   def initialize(name)
     @name = name
@@ -14,7 +9,11 @@ class Person
     self.partner = person
     person.partner = self
   end
-
+  
+  class PartnerError < StandardError
+    
+  end
+  
 end
 
 beyonce = Person.new("Beyonce")
